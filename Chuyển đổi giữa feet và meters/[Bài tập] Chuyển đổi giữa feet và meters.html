@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .hinhdang {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+<input type="text" id="nhap" class="hinhdang" placeholder="nhập số liệu"><div id="show"></div><br>
+<button type="button" onclick="chuyensangfeet()">chuyen sang feet</button> <button type="button" onclick="chuyensangmeter()">chuyen sang meter</button>
+<script>
+  function chuyensangmeter() {
+    let i = document.getElementById("nhap").value;
+    document.getElementById("show").innerHTML = "meter = " + 3.279 * i;
+  }
+  function chuyensangfeet() {
+    let i = document.getElementById("nhap").value;
+    document.getElementById("show").innerHTML ="feet = " + 0.305 * i;
+  }
+</script>
+</body>
+</html>

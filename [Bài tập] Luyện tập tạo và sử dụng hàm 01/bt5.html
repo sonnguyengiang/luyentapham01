@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap"> <button type="button" onclick="timsao()">check</button><br>
+<div id="show"></div>
+<script>
+    var arr = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    var arr1 = ["Ursa_Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa_Major", "Leo"];
+    var arr2 = [];
+    function timsao() {
+        let x = document.getElementById("nhap").value;
+        for (let i = 0; i < arr.length; i++) {
+            if (x == arr[i]) {
+                arr2.push(arr1[i]);
+                document.getElementById("show").innerHTML = "chòm sao tương ứng: " + arr2;
+            }
+        }
+    }
+</script>
+</body>
+</html>
